@@ -144,6 +144,32 @@ header{
 }
 
 /* ---------------- BANNER ---------------- */
+.banner{
+  width:auto;
+  height:auto;
+  background:url('img/b1.avif') no-repeat;
+  background-size:cover;
+  display:grid;
+  place-items:center;
+  padding-top:8rem;
+}
+
+@media only screen and (min-device-width:1200px){
+
+  .banner{
+    align-items:flex-end;
+    width:100%;
+    height:80vh;
+    background:url('img/b1.avif') no-repeat;
+    background-size:cover;
+    display:grid;
+    padding-top:8rem;
+  }
+
+  .wrapper{
+    padding:20px 40px;
+  }
+}
 
 
 /* ---------------- CONTENT ---------------- */
