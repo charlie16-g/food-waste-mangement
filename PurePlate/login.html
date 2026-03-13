@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Plate Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f1f2f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .login-container select,
+        .login-container input {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-container input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .login-container label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .login-container .forgot {
+            float: right;
+            font-size: 13px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .login-container .forgot:hover {
+            text-decoration: underline;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2f80ed;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #1366d6;
+        }
+
+        .login-container .signup {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container .signup a {
+            text-decoration: none;
+            color: #2f80ed;
+        }
+
+        .login-container .signup a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 8px;
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .logo span:nth-child(2) {
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/000000/apple.png" alt="logo"/>
+            <span>Pure Plate</span>
+        </div>
+        <h2>Login</h2>
+        <form>
+            <select>
+                <option selected disabled>Login As:</option>
+                <option value="admin">Admin</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="ngo">NGO</option>
+            </select>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup">
+            Not a member? <a href="#">Signup Now</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f6f8;
+}
+
+.container{
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:240px;
+background:#1c5d4f;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+padding:20px;
+}
+
+.logo{
+font-size:20px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.menu{
+list-style:none;
+}
+
+.menu li{
+padding:12px;
+cursor:pointer;
+border-radius:6px;
+}
+
+.menu li:hover{
+background:#2c7a6b;
+}
+
+.sidebar-bottom button{
+padding:10px;
+border:none;
+background:#fff;
+cursor:pointer;
+margin-top:20px;
+}
+
+.logout{
+display:block;
+margin-top:20px;
+color:white;
+text-decoration:none;
+}
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:20px;
+}
+
+/* TOPBAR */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+.brand{
+color:#2c7a6b;
+}
+
+/* FILTER */
+
+.filter-box{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.filter-box select{
+padding:8px;
+margin-left:10px;
+}
+
+.filter-box button{
+padding:8px 15px;
+background:#2c7a6b;
+color:white;
+border:none;
+cursor:pointer;
+margin-left:10px;
+}
+
+/* TABLE */
+
+.table-container{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+border-bottom:1px solid #eee;
+text-align:left;
+}
+
+th{
+background:#f2f2f2;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+background:#1e1e1e;
+color:white;
+}
+
+.dark-mode .table-container{
+background:#2c2c2c;
+}
+
+.dark-mode .filter-box{
+background:#2c2c2c;
+}
